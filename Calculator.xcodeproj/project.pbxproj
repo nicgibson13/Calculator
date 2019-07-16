@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7C5D544922DD184600FE9752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D544822DD184600FE9752 /* AppDelegate.swift */; };
-		7C5D544B22DD184600FE9752 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D544A22DD184600FE9752 /* ViewController.swift */; };
 		7C5D544E22DD184600FE9752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D544C22DD184600FE9752 /* Main.storyboard */; };
 		7C5D545022DD184800FE9752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D544F22DD184800FE9752 /* Assets.xcassets */; };
 		7C5D545322DD184800FE9752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D545122DD184800FE9752 /* LaunchScreen.storyboard */; };
+		7C5D546222DD22DA00FE9752 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D546122DD22DA00FE9752 /* CalculatorViewController.swift */; };
+		7C5D546422DD258800FE9752 /* CalculatorUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D546322DD258800FE9752 /* CalculatorUIView.swift */; };
+		7C5D546722DD2FA600FE9752 /* runescape_uf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D546622DD2FA600FE9752 /* runescape_uf.ttf */; };
+		7C5D546A22DD336200FE9752 /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D546922DD336200FE9752 /* Levels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C5D544522DD184600FE9752 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5D544822DD184600FE9752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C5D544A22DD184600FE9752 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C5D544D22DD184600FE9752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C5D544F22DD184800FE9752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5D545222DD184800FE9752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C5D545422DD184800FE9752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5D546122DD22DA00FE9752 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		7C5D546322DD258800FE9752 /* CalculatorUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUIView.swift; sourceTree = "<group>"; };
+		7C5D546622DD2FA600FE9752 /* runescape_uf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = runescape_uf.ttf; path = ../../../../../../../../../Downloads/runescape_uf.ttf; sourceTree = "<group>"; };
+		7C5D546922DD336200FE9752 /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		7C5D544722DD184600FE9752 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				7C5D546822DD335700FE9752 /* Level Helper */,
+				7C5D546022DD1F5500FE9752 /* Custom UI */,
+				7C5D545D22DD1D5D00FE9752 /* Storyboards */,
+				7C5D545C22DD1D5100FE9752 /* View Controller */,
+				7C5D545B22DD1CDE00FE9752 /* Resources */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		7C5D545B22DD1CDE00FE9752 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7C5D544822DD184600FE9752 /* AppDelegate.swift */,
-				7C5D544A22DD184600FE9752 /* ViewController.swift */,
-				7C5D544C22DD184600FE9752 /* Main.storyboard */,
 				7C5D544F22DD184800FE9752 /* Assets.xcassets */,
 				7C5D545122DD184800FE9752 /* LaunchScreen.storyboard */,
 				7C5D545422DD184800FE9752 /* Info.plist */,
+				7C5D546522DD2F0E00FE9752 /* Fonts */,
 			);
-			path = Calculator;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C5D545C22DD1D5100FE9752 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D546122DD22DA00FE9752 /* CalculatorViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7C5D545D22DD1D5D00FE9752 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D544C22DD184600FE9752 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C5D546022DD1F5500FE9752 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D546322DD258800FE9752 /* CalculatorUIView.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		7C5D546522DD2F0E00FE9752 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D546622DD2FA600FE9752 /* runescape_uf.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7C5D546822DD335700FE9752 /* Level Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D546922DD336200FE9752 /* Levels.swift */,
+			);
+			path = "Level Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5D546722DD2FA600FE9752 /* runescape_uf.ttf in Resources */,
 				7C5D545322DD184800FE9752 /* LaunchScreen.storyboard in Resources */,
 				7C5D545022DD184800FE9752 /* Assets.xcassets in Resources */,
 				7C5D544E22DD184600FE9752 /* Main.storyboard in Resources */,
@@ -135,8 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5D544B22DD184600FE9752 /* ViewController.swift in Sources */,
+				7C5D546222DD22DA00FE9752 /* CalculatorViewController.swift in Sources */,
 				7C5D544922DD184600FE9752 /* AppDelegate.swift in Sources */,
+				7C5D546A22DD336200FE9752 /* Levels.swift in Sources */,
+				7C5D546422DD258800FE9752 /* CalculatorUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Calculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
